@@ -15,7 +15,7 @@ app.get("/",(req, res)=>{
 })
 
 app.use("/proMovie", userRoute)
-//app.use(authentication)
+app.use(authentication)
 app.use("/proMovie", movieRouter)
 
 

@@ -35,7 +35,7 @@ userRoute.post("/login", async (req, res)=>{
         }else{
             bcrypt.compare(password, hash_pass,async (err, result)=>{
                 if(result){
-                    const token = jwt.sign({userId: user._id}, process.env.key)
+                    const token = jwt.sign({userId: user._id}, process.env.key ,{ expiresIn: '3h' })
                     res.status(201).send({"message":"Login success", "token": token})
                 }else{
                     res.status(500).send({message:` INTERNAL_SERVER ${err} and Please check your password and email`})

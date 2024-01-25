@@ -20,7 +20,7 @@ const Login = () => {
 
         if (email && password) {
             try {
-                const res = await fetch(`http://localhost:4500/proMovie/login`, {
+                const res = await fetch(`https://fair-puce-foal-kilt.cyclic.app/proMovie/login`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

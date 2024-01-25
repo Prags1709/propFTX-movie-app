@@ -11,6 +11,17 @@ const movieSchema = mongoose.Schema({
     rating: { type: String, required: false },
 });
 
+movieSchema.index({
+    title: "text", 
+    posterUrl: "text", 
+    year: "text", 
+    certificate: "text", 
+    genre: "text", 
+    director: "text", 
+    actors: "text", 
+    rating: "text" 
+});
+
 const MovieModel = mongoose.model("movie", movieSchema)
 
 module.exports = {MovieModel}

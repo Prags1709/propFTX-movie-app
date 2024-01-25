@@ -13,7 +13,7 @@ const MoviesBox = ()=>{
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://localhost:4500/proMovie/`, {
+            const response = await fetch(`https://fair-puce-foal-kilt.cyclic.app/proMovie/`, {
                 headers: {
                     'Content-Type': 'application/json',
                     Authorization: localStorage.getItem("token")
@@ -46,7 +46,7 @@ const MoviesBox = ()=>{
 
         try {
             setLoder(true)
-            const response = await fetch(`http://localhost:4500/proMovie/${userSearch}`, {
+            const response = await fetch(`https://fair-puce-foal-kilt.cyclic.app/proMovie/${userSearch}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     Authorization: localStorage.getItem("token")

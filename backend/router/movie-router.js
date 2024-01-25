@@ -12,6 +12,18 @@ movieRouter.get("/", async (req, res)=>{
     }
 })
 
+//Search end pint
+movieRouter.get("/:search", async (req, res)=>{
+    const searchQuery = req.params.search;
+    try {
+        const data = await MovieModel.find({$text: {$search: searchQuery}});
+        res.send(data)
+    } catch (error) {
+        console.log(error);
+        res.status(500).send({message:`INTERNAL_SERVER ${error}`})
+    }
+})
+
 movieRouter.post("/add",async (req, res)=>{
     const payload = req.body
     try {
