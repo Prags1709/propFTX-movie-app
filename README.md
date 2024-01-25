@@ -85,3 +85,27 @@ http://localhost:3000
 | POST | /proMovie/add | This endpoint allow users to add new Movie.| 201 |
 | PATCH | /proMovie/update/:id | This endpoint allow users to update the details of a specific the movie data by its ID. | 204 |
 | DELETE | /proMovie/delete/:id | This endpoint allow users to delete a specific the movie identified by its ID. | 202 |
+
+## Movie sample schema
+```javascript
+ {
+    "_id": "65b15a8a6f35fafceab11dc0",
+    "title": "Thor",
+    "posterUrl": "https://cdn.marvel.com/content/1x/thorthedarkworld_lob_crd_02_2.jpg",
+    "year": 2015,
+    "certificate": "U/A",
+    "genre": [
+      "Action",
+      "Fantasy",
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Taika Waititi",
+    "actors": [
+      "Chris Hemsworth",
+      "Tessa Thompson",
+      "Taika Waititi"
+    ],
+    "rating": "8.9"
+  }
+```
