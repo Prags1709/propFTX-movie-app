@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.nav > div > h2 {
+  color: rgb(231, 8, 8);
+  margin: 0;
+}
+
+.nav > div > h2 > span {
+  color: white;
+}
+
+.nav > .navbar-titles {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  width: 60%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  background-color: #15d4ca;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  font-size: large;
+}
+
+.role-box {
+  width: 80%;
+  text-align: center;
+  font-size: large;
+}
+
+.sub {
+  width: 80%;
+  height: 40px;
+  cursor: pointer;
+  font-size: large;
+  margin-top: 15px;
+  background-color: green;
+  border: 0px;
+  color: white;
+}
+
+label {
+  font-size: 20px;
+  color: red;
+}
+
+.movieBox {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.movieBox > .movieCard {
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.movieBox > .movieCard > img {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+}
+
+.movieBox > .movieCard > p {
+  margin:  5px 0 0 10px;
+}
+
+.movieBox > .movieCard > p:last-child {
+  margin-bottom: 10px;
+}
+
+.movieBox > .movieCard > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.movieBox > .movieCard > div > div{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(224, 224, 4);
+  color: black;
+}
+
+.movieBox > .movieCard > div > h4 > span {
+  color: red;
+}
+
+.movieBox > .movieCard > p > span {
+  color: red;
+}
+
+.search-filter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-filter > select {
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-filter > .search-box {
+  display: flex;
+  width: 50%;
+}
+
+.search-filter > .search-box > input {
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.search-filter > .search-box > button {
+  border-radius: 20px;
+  padding: 0 10px 0 10px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.spinner {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side,#474bff 94%,#0000) top/9px 9px no-repeat,
+         conic-gradient(#0000 30%,#474bff);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+     transform: rotate(1turn);
+  }
+}
