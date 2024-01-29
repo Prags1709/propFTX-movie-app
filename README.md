@@ -1,7 +1,7 @@
 # propFTX-movie-app
 
 **Deploy Link**
-- vercel website link-> https://attryb-assignment-zp94.vercel.app/
+- vercel website link-> https://prop-ftx-movie-app.vercel.app/
 - cyclic Backend link-> https://repulsive-outfit-frog.cyclic.cloud/
 
 **Tech Stacks Used**
